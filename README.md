@@ -32,4 +32,30 @@ If the mailbox auto discovery fails, please specify the EWS url instead.
 
 # Exporting items
 
-To export items using EWS
+To export items using EWS click on the **Export Items** button in the main form. 
+
+The form will take a bit of time to load as it will loop through the folders in the mailbox and display the folder hierarchy in the tree view on the left. 
+
+Once the folders tree is loaded, expand it and navigate to the folder that contains the item you wish to export. Select the folder containing the item you wish to export and make sure the folder name and folder Id are displayed in the **Folder name** and **Folder Id** fields.
+
+When you select the folder, the panel on the right will start populating the list of items and will display the **DateTimeReceived** and **Subject** columns. 
+
+Select the item you wish to export from the list by clicking on the **DateTimeReceived** row corresponding to the item, and click the **Export** button. 
+
+If you wish to export the item to a folder other than the current directory from which you are running the executable, please click the **Browse** button and select the folder you wish to export the item in.
+
+A message box will be fisplayed confirming the export. 
+
+![alt text](https://raw.githubusercontent.com/andreighita/EWSMailman/master/ReadME/ExportForm.PNG)
+
+# Importing items
+
+To import items using EWS click on the **Import Items** button in the main form. 
+
+The form will take a bit of time to load as it will loop through the folders in the mailbox and display the folder hierarchy in the tree view on the left. 
+
+Once the folders tree is loaded, expand it and navigate to the folder in which you wish to import items previously exported. Select the folder and make sure the folder name and folder Id are displayed in the **Folder name** and **Folder Id** fields, then click on the **Import** button to browse to the previously exported item and import that intem into the selected folder.
+
+When the import completes a message box will be displayed showing the ResponseCode received form the service. 
+
+![alt text](https://github.com/andreighita/EWSMailman/blob/master/ReadME/ImportForm.PNG?raw=true)
